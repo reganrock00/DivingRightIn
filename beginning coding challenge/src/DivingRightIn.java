@@ -18,25 +18,22 @@ public class DivingRightIn
 
 				System.out.println("Hello " + name + "!");
 
-				if (age == 16)
+				if (age < 17)
 					{
-						System.out.println("Basically an adult!");
+						System.out.println("Almost and adult.");
 					}
 				if (age == 17)
 					{
 						System.out.println("Enjoy your senior year");
 					}
-				if (age == 18)
+				if (age > 17)
 					{
-						System.out.println("Officially an adult!");
+						System.out.println("So your legally an adult.");
 					}
-				else
-					{
-						System.out.println("I dont know what to say to people your age.");
-					}
+				System.out.println(" ");
 				int counter = 0;
 				int howdy = 0;
-				for (counter = year; counter < 2017; counter++ )
+				for (counter = year; counter < 2018; counter++ )
 					{
 						
 						if (counter == 1)
@@ -48,6 +45,20 @@ public class DivingRightIn
 								System.out.println("In " + counter + " you were " + howdy + " years old!");
 							}
 						howdy++;
+					}
+				double dogYear = howdy;
+				dogYear = dogYear/7;
+				System.out.println(" ");
+				System.out.println("You are " + dogYear + " in dog years.");
+				System.out.println(" ");
+				int leapYear = (2017 - year)/ 4;
+				if (leapYear == 1)
+					{
+						System.out.println("You have lived through " + leapYear + " leap year.");	
+					}
+				else
+					{
+						System.out.println("You have lived through " + leapYear + " leap years.");	
 					}
 			}
 

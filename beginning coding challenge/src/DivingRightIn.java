@@ -34,17 +34,20 @@ public class DivingRightIn
 					{
 						System.out.println("I dont know what to say to people your age.");
 					}
-				
-				for (int counter = year; counter < 2017; counter++ )
+				int counter = 0;
+				int howdy = 0;
+				for (counter = year; counter < 2017; counter++ )
 					{
+						
 						if (counter == 1)
 							{
-								System.out.println("In " + year + " you were a " + counter + " year old!");
+								System.out.println("In " + counter + " you were a " + howdy + " year old!");
 							}
 						else
 							{
-								
+								System.out.println("In " + counter + " you were " + howdy + " years old!");
 							}
+						howdy++;
 					}
 			}
 
